@@ -10,7 +10,7 @@
         android:id="@+id/outputTextView"
         android:layout_width="228dp"
         android:layout_height="412dp"
-        android:text="Output"
+        android:text="@string/txt_view_output"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
@@ -25,7 +25,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="476dp"
-        android:text="Go back"
+        android:text="@string/btn_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

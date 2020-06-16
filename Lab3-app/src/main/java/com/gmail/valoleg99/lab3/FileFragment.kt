@@ -43,15 +43,15 @@ class FileFragment : Fragment() {
                         it.write(currentTextResult.toByteArray())
                     }
 
-                    resultFileFragmentText.text = "Your choice was written to file ${fileName.text.toString()}.txt"
+                    resultFileFragmentText.text = "Результат записан в файл ${fileName.text.toString()}.txt"
                 }
                 else{
-                    resultFileFragmentText.text = "You did not choose item to be saved"
+                    resultFileFragmentText.text = "Нечего сохранять"
                 }
             }
             else
             {
-                resultFileFragmentText.text = "Enter file name first!"
+                resultFileFragmentText.text = "Сначала введи имя файла"
             }
         }
     }
@@ -72,11 +72,11 @@ class FileFragment : Fragment() {
                     startActivity(intent)
                 }
                 else{
-                    resultFileFragmentText.text = "File does not exist"
+                    resultFileFragmentText.text = "Файл не найден"
                 }
             }
             else{
-                resultFileFragmentText.text = "You did not enter name of file to open"
+                resultFileFragmentText.text = "Введи имя файла, чтобы открыть"
             }
         }
 

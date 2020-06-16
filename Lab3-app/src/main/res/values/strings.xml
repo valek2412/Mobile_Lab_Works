@@ -2,6 +2,14 @@
     <string name="app_name">Lab3</string>
     <string name="spinner_title">Выбери кличку котику</string>
     <string name="nothing_selected">Ничего не выбрано</string>
+
+    <string name="btn_back">Назад</string>
+    <string name="btn_open">Открыть</string>
+    <string name="btn_save">Сохранить</string>
+
+    <string name="hint_filename">Введите имя файла</string>
+
+    <string name="txt_view_output">Вывод</string>
     <string-array name="catlist">
         <item>Барсик</item>
         <item>Мурзик</item>
