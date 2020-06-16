@@ -59,7 +59,7 @@ class MainFragment : Fragment() {
         val adapter = ArrayAdapter(
             this.context!!,
             android.R.layout.simple_spinner_item,
-            listOf(getString(R.string.nothing_selected_item)) + resources.getStringArray(R.array.catlist).toList()
+            resources.getStringArray(R.array.catlist).toList()
         )
         adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line)
         spinner!!.adapter = adapter
@@ -68,14 +68,7 @@ class MainFragment : Fragment() {
     fun buttonOkSetup()
     {
         buttonOk.setOnClickListener{
-            if(spinner.selectedItem.toString().equals(R.string.nothing_selected.toString()))
-            {
-                listener?.onFragmentInteraction(getString(R.string.nothing_selected))
-            }
-            else
-            {
                 listener?.onFragmentInteraction("Теперь твоего котенка зовут: ${spinner?.selectedItem.toString()}")
-            }
         }
     }
 
@@ -86,7 +79,4 @@ class MainFragment : Fragment() {
             listener?.onFragmentInteraction(getString(R.string.nothing_selected))
         }
     }
-
-
-
 }
