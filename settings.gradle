@@ -1,2 +1,2 @@
-include ':app'
+include ':Lab2-app'
 rootProject.name='Lab1'
